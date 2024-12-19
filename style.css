@@ -1,0 +1,79 @@
+/* Body Style */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #2c3e50;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ecf0f1;
+}
+
+/* Digital Clock Container */
+.digital-clock {
+    background-color: #34495e;
+    border-radius: 15px;
+    padding: 30px 50px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Weekdays Styling */
+.week {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.week div {
+    color: #ecf0f1;
+    padding: 5px 10px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.week .active {
+    opacity: 1;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.week div:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Time Styling */
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.time .hour,
+.time .min,
+.time .sec {
+    background-color: #1abc9c;
+    color: #34495e;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.time .dot {
+    font-size: 80px;
+    margin: 0 15px;
+    color: #e74c3c;
+}
+
+/* Hover Effect for Time */
+.time .hour:hover,
+.time .min:hover,
+.time .sec:hover {
+    background-color: #16a085;
+    cursor: pointer;
+}
